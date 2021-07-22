@@ -23,8 +23,8 @@ const convert = (req, res) => {
     const integer = countIntegerValue(valueInteger);
 
     return res.json({
-      "ROMANO VÁLIDO: ": valueRoman,
-      "INTEIRO: ": integer,
+      "ROMANO VÁLIDO": valueRoman,
+      INTEIRO: integer,
       ENVIADO: romano,
     });
   }
