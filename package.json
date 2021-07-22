@@ -1,0 +1,37 @@
+{
+  "name": "iromano",
+  "version": "1.0.0",
+  "description": "API para conversão de números romanos para decimal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-babel",
+    "start": "npm run build && node ./build/index.js",
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m3lvin-s3rafim/iromano.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m3lvin-s3rafim/iromano/issues"
+  },
+  "homepage": "https://github.com/m3lvin-s3rafim/iromano#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-cli": "^6.26.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
